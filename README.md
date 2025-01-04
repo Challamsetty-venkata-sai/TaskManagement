@@ -96,6 +96,22 @@ After adding the task successfully he can also edit it also he can delete it and
 
 ## Preview
 
-Mobile Demo
+**Mobile Demo**
+
+https://github.com/user-attachments/assets/4ca86e9e-1d8f-47dc-bb89-fb380d5ca3f2
+
+**Tab Demo**
+
+https://github.com/user-attachments/assets/e2c68a39-0619-4d70-8840-5479f2412d02
+
+**Laptop Demo**
+
+https://github.com/user-attachments/assets/2560bf33-e9c0-4603-9bfd-d6ac2f83a811
+
+
+
+
+
+
 
 
