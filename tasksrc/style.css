@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'roboto', 'Times New Roman', 'Times, serif'; 
+    /*content box means width and height applies to
+    element only not for borders and padding 
+    border box means width and height applies to the bothe element and padding and its 
+    border too */
+}
+/* The task Manager Logic */
+main{
+  border:1px solid black;
+  background-color: rgb(0, 0, 0);
+  height:100%;
+  
+}
+.mainblockvisible{
+    opacity:100;
+}
+.mainblockhidden{
+    opacity: 0;
+}
+.name{
+    color:red;
+    font-size: 28px;
+}
+.message{
+    color:black;
+    font-size: 28px;
+    color:white;
+}
+.task_fileds{
+    border: 1px solid black;
+    width:800px;
+    height:500px;
+    margin-left: 25%;
+    margin-top: 5%;
+    border-radius: 5px;
+    background-color: white;
+    outline: 3px solid black;
+}
+.label{
+    font-size: 25px;
+    font-weight: 500; 
+}
+.task1{
+    /* border:1px solid black; */
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.task2{
+    /* border:1px solid black; */
+    margin-top:40px;
+    margin-left: 5px;
+}
+.task3{
+    /* border:1px solid black; */
+    margin-top:25px;
+    margin-left: 5px;
+}
+.task1 input{
+    width:780px;
+    outline: 2px solid black;
+    border-radius: 5px;
+}
+.task2 input{
+    width:780px;
+    height:60px;
+    /* text-align: left; */
+    outline: 2px solid black;
+    border-radius: 5px;
+}
+.task3 input{
+    width:780px;
+    height: 40px;
+    outline: 2px solid black;
+    border-radius: 5px;
+}
+.info{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.task4{
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+.add{
+    height:50px;
+    width:100px;
+    background-color: #0000ff;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-left: 80%;
+}
+.logout{
+    height:50px;
+    width:100px;
+    background-color: #0000ff;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: absolute;
+    top:8%;
+    left:90%;
+}
+.retask{
+    height:50px;
+    width:100px;
+    background-color: #0000ff;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: relative;
+    top:-49px;
+    left:5%;
+}
+.readdhidden{
+    opacity:0;
+}
+.readdvisible{
+    opacity: 100;
+}
+.addhidden{
+    opacity:0;
+}
+.addvisible{
+    opacity:100;
+}
+/* added task details*/
+.tasks{
+    border:1px solid black;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    gap:10px;
+    flex-wrap: wrap;
+    
+}
+.box{
+    margin-top: 10px;
+    padding:10px;
+    width:400px;
+    height:300px;
+    border:1px solid black;
+    border-radius: 10px;
+    outline: 3px solid black;
+    background-color: white;
+}
+.edit{
+    width:100px;
+    height:40px;
+    font-size: 20px;
+     margin-left: 10px; 
+    margin-top: 10%;
+    background-color: #0000ff;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.delete{
+    width:100px;
+    height:40px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10%;
+    background-color: #0000ff;
+    color: whitesmoke;
+    font-weight: 500;
+    
+}
+.markascompleted{
+    width:105px;
+    height:40px;
+    font-size: 20px;
+    /* margin-left: 10%; */
+    margin-left: 10px;
+    margin-top: 10%;
+    background-color: #0000ff;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.header{
+    display:flex;
+    border:1px solid black;
+    
+    width:100%;
+    height:80px;
+    background-color: aqua;
+    position:absolute;
+    top:0px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.labels{
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100px;
+}
+.loginbtn{
+    width:70px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: relative;
+    left:-90px
+}
+.headervisible{
+    opacity: 100;
+}
+.headerhidden{
+    opacity:0;
+}
+/*MOBILE RESOLUTION*/
+@media only screen and (max-width:767px){
+    .logininfo{
+        font-size: 15px;
+        font-weight: 900;
+        color:red
+    }
+    .taskinfo{
+        font-size: 15px;
+        font-weight: 900;
+        color:red
+
+    }
+    .labels{
+        width:50px;
+        height: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        top:-5px
+    }
+    .inputbox{
+        display: flex;
+    }
+    .loginbtn{
+        text-align: center;
+        width:40px;
+        position: relative;
+        left:10%;
+        top:-10px;
+        height: 30px;
+
+    }
+    .task_fileds{
+        width:100%;
+        margin-left: 0;
+    }
+    .task1 input,.task2 input,.task3 input{
+        width:100%;
+    }
+    .add{
+        position: relative;
+        left:-40px;
+        top:10px
+    }
+    .name{
+        font-size: 30px;
+    }
+    .message{
+        font-size: 16px;
+    }
+    .logout{
+        position: relative;
+        left:70%;
+        font-size: 20px;
+    }
+    .readd{
+        position: relative;
+        top:-34px
+    }
+    .box{
+        width:400px;
+    }
+    .edit{
+        width:80px;
+        font-size: 20px;
+    }
+    .delete{
+        width:80px;
+        font-size: 20px;
+
+    }
+    .markascompleted{
+        font-size: 20px;
+
+    }
+
+}
+/*TAB RESOLUTION*/
+@media only screen and (min-width:768px) and (max-width:1023px)
+{
+    .logininfo{
+        font-size: 25px;
+        font-weight: 1000;
+        color:red
+    }
+    .taskinfo{
+        font-size: 25px;
+        font-weight: 1000;
+        color:red;
+
+    }
+    .labels{
+        width:100px;
+        height: 40px;
+        margin-bottom: 20px;
+        position: relative;
+        top:-5px;
+        left:10px;
+        font-size: 32px;
+    }
+    .inputbox{
+        display: flex;
+    }
+    .loginbtn{
+        position: relative;
+        left:10px;
+        top:-6px;
+        width:100px;
+        height: 40px;
+    }
+    .task_fileds{
+        width:99%;
+        margin-left: 0;
+    }
+    .task1 input,.task2 input,.task3 input{
+        width:100%;
+        height: 40px;
+        font-size: 22px;
+    }
+    .add{
+        position: relative;
+        left:40px;
+        top:10px
+    }
+    .logout{
+        position: relative;
+        left:84%;
+    }
+    .header{
+        padding-top: 10px;
+
+    }
+}

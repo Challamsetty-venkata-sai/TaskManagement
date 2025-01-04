@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK MANAGER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+<body>
+    
+     <!-- Task Manager Block-->
+      <main class="mainblock mainblockhidden">
+        <div class="info">
+            <h1 class="name">Welcome Mr Ravi</h1>
+            <h2 class="message">To Finish your Un Finished Tasks</h2>
+        </div>
+        <div>
+            <button class="logout">LogOut</button>
+        </div>
+        <div class="task_fileds">
+
+           <div class="task1">
+            <label class="label"for="taskname">Task Name</label><br>
+            <input class="t1" type="text"placeholder="Enter Task Name" required >
+           </div>
+            <div class="task2">
+                <label class="label"for="taskname">Task Description</label><br>
+                <input class="t2"type="text"placeholder="Enter Task Description" required >
+            </div>
+            <div class="task4">
+                <div>
+                    <input type="checkbox" value="all" >#ALL
+                </div>
+                <div>
+                    <input type="checkbox" value="personal">#Personal
+                </div>
+                <div>
+                    <input type="checkbox" value="college">#College
+                </div>
+                <div>
+                    <input type="checkbox" value="office">#Office
+                </div>
+                <div>
+                    <input type="checkbox" value="daily">#Daily
+                </div>
+
+            </div>
+            <div class="task3">
+                <label  class="label"for="taskname">Task DeadLine</label><br>
+            <input class="t3"type="date"placeholder="dd-mm-yyy" required>
+            </div> 
+            <button class="add addvisible">Add</button>
+            <button class="readd retask readdhidden ">ReAdd</button>
+
+        </div>
+        <br><br>
+        <div class="tasks">
+            <div class="box">
+                <h5 class="names">Task Name1</h5>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio laudantium nostrum voluptas facilis ut nam atque inventore itaque soluta nemo nesciunt, officiis voluptates hic odio esse, aperiam dicta nihil.</p>
+                <h5 class="time">deadline dd-mm-yyyy</h5>
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+                <button class="markascompleted">Completed</button>
+            </div>
+            
+            
+        </div>
+      </main>
+      <header class="header headervisible">
+        <div>
+            <h2 class="logininfo">Login To Your Account</h2>
+        </div>
+        <div>
+            <h1 class="taskinfo">TASK Management App</h1>
+        </div>
+        <div class="inputbox">
+            <input type="text" class="labels user" placeholder="USER NAME">
+            <input type="password" class="labels key" placeholder="PASSWORD">
+        </div>
+        <div>
+            <button class="loginbtn">-----></button>
+        </div>
+      </header>
+      <script src="index.js">
+
+      </script>
+    
+</body>
+</html>
