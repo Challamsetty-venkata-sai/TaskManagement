@@ -53,7 +53,7 @@ After adding the task successfully he can also edit it also he can delete it and
 1.Clone the repository:
 
 ```bash
-  git clone https://github.com/Venkata-Kiran-Adapa/Task-Manager.git
+  git clone https://github.com/Challamsetty-venkata-sai/TaskManagement.git
 ```
 
 2.Navigate to the project directory:
